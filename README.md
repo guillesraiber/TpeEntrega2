@@ -35,3 +35,5 @@ PEDIDO
 | fecha | date | Fecha del pedido |
 | local | varchar | Local donde se realizó el pedido |
 | total | varchar | Precio total del pedido |
+
+![image](https://github.com/user-attachments/assets/d239d3e8-dfa2-48d5-a97e-891b8b1882eb)
