@@ -4,35 +4,16 @@ Integrantes: Guillermina Sraiber Luit- guilleluit18@gmail.com y Maximiliano Pais
 
 ESTRUCTURA DE TABLAS:
 
++-------------+          +------------+           +--------+
+|   usuario   |          |   compra   |           | libros |
++-------------+          +------------+           +--------+
+| ID_Usuario  |          | ID_Compra  |<--------- |ID_Libro|
+| Nombre      |          | Fecha      |           |Titulo  |
+| Password    |          | Total      |           |Autor   |
+| es_admin    |          | Local      |           |Genero  |
++-------------+          | ID_Cliente |           |Editorial|
+                         +------------+           |Precio  |
+                                                  |id_compra|
+                                                  +--------+
 
- USUARIOS 
-
-| COLUMNA | TIPO | DESCRIPCIÓN  |
-| :---- | :---- | :---- |
-| id\_usuarios | int | ID único, es la clave primaria. |
-| nombre\_usuario | varchar | Nombre del usuario. |
-| dni\_usuario | int | DNI del usuario. |
-| contacto\_usuario | int | Contacto del usuario. |
-| clave\_usuario | int  | Clave del usuario. |
-
-LIBROS
-
-| COLUMNA | TIPO | DESCRIPCION  |
-| :---- | :---- | :---- |
-| id\_libros | int  | ID único, es la clave primaria. |
-| titulo | varchar | Titulo del libro |
-| autor | varchar | Autor del libro. |
-| editorial | varchar | Editorial del libro. |
-| precio | double | Precio del libro. |
-
-PEDIDO
-
-| COLUMNA | TIPO | DESCRIPCIÓN |
-| :---- | :---- | :---- |
-| id\_pedido | int | ID único del pedido, clave primaria. |
-| id\_cliente | int | ID único del usuario, clave foránea. |
-| id\_libro | int | ID único del libro, clave foránea. |
-| fecha | date | Fecha del pedido |
-| local | varchar | Local donde se realizó el pedido |
-| total | varchar | Precio total del pedido |
 
