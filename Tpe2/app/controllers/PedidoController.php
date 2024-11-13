@@ -42,8 +42,6 @@ class PedidoController {
             ];
             $this->model->crearPedido($data);
             header("Location: " . BASE_URL . "pedidos");
-        } else {
-            require './templates/pedido/crear.phtml'; 
         }
     }
 
