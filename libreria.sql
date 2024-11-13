@@ -124,9 +124,8 @@ ALTER TABLE `libros`
 -- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`ID_Usuario`);
-
---
+  ADD PRIMARY KEY (`ID_Usuario`),
+  ADD CONSTRAINT unique_nombre UNIQUE (Nombre);
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
