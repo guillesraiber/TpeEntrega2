@@ -8,7 +8,7 @@ class PedidoView{
     }
 
     public function ListarPedidos($pedidos) {
-        require './templates/pedido/lista.phtml';  // Asegúrate de que esta ruta es correcta
+        require './templates/pedido/lista.phtml';  
     }
 
 
