@@ -9,11 +9,6 @@
         </div>
 
         <div class="mb-3">
-            <label for="id_cliente" class="form-label">ID Cliente:</label>
-            <input type="number" id="id_cliente" name="id_cliente" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
             <label for="precio" class="form-label">Total:</label>
             <input type="number" id="precio" name="precio" class="form-control" required>
         </div>
@@ -31,7 +26,6 @@
                     <p class="card-text">Fecha: <?= $c->Fecha_compra ?></p>
                     <p class="card-text">Total: $<?= number_format($c->Total, 2) ?></p>
                     <p class="card-text">Local: <?= $c->Local ?></p>
-                    <p class="card-text">ID Cliente: <?= $c->ID_Cliente ?></p>
                     <a href="detallarPedido/<?=$c->ID_Compra ?>/" class="btn btn-success">Ver pedido</a>
                 </div>
             </div>
