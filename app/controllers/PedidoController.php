@@ -37,13 +37,10 @@ class PedidoController {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $data = [
                 'local' => $_POST['local'],
-                'id_cliente' => $_POST['id_cliente'],
                 'precio' => $_POST['precio'],
             ];
             $this->model->crearPedido($data);
             header("Location: " . BASE_URL . "pedidos");
-        } else {
-            require './templates/pedido/crear.phtml'; // Asegúrate de tener un formulario de creación de pedidos aquí
         }
     }
 
