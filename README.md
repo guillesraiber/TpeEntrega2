@@ -9,30 +9,30 @@ ESTRUCTURA DE TABLAS:
 
 | COLUMNA | TIPO | DESCRIPCIÓN  |
 | :---- | :---- | :---- |
-| id\_usuarios | int | ID único, es la clave primaria. |
-| nombre\_usuario | varchar | Nombre del usuario. |
-| dni\_usuario | int | DNI del usuario. |
-| contacto\_usuario | int | Contacto del usuario. |
-| clave\_usuario | int  | Clave del usuario. |
+| ID\_Usuarios | int | ID único, es la clave primaria. |
+| Nombre | varchar | Nombre del usuario, index unico |
+| Password | int  | Clave del usuario. |
+| es\_admin | varchar | Define si es administrador |
 
 LIBROS
 
 | COLUMNA | TIPO | DESCRIPCION  |
 | :---- | :---- | :---- |
-| id\_libros | int  | ID único, es la clave primaria. |
-| titulo | varchar | Titulo del libro |
-| autor | varchar | Autor del libro. |
-| editorial | varchar | Editorial del libro. |
-| precio | double | Precio del libro. |
+| ID\_Libros | int  | ID único, es la clave primaria. |
+| Titulo | varchar | Titulo del libro |
+| Autor | varchar | Autor del libro. |
+| Editorial | varchar | Editorial del libro. |
+| Precio | double | Precio del libro. |
+| id_compra | int | ID unico de la compra, clave foranea |
 
-PEDIDO
+COMPRA
 
 | COLUMNA | TIPO | DESCRIPCIÓN |
 | :---- | :---- | :---- |
-| id\_pedido | int | ID único del pedido, clave primaria. |
-| id\_cliente | int | ID único del usuario, clave foránea. |
-| id\_libro | int | ID único del libro, clave foránea. |
-| fecha | date | Fecha del pedido |
-| local | varchar | Local donde se realizó el pedido |
-| total | varchar | Precio total del pedido |
+| ID\_Compra | int | ID único de la compra, clave primaria. |
+| Fecha\_compra | date | Fecha del pedido |
+| Local | varchar | Local donde se realizó el pedido |
+| Total | double | Precio total del pedido |
+
+![Diagrama](https://github.com/user-attachments/assets/1bcfb415-4ac6-4d4f-899f-4adfa4ebf60f)
 
