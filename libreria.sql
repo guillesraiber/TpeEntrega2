@@ -31,16 +31,15 @@ CREATE TABLE `compra` (
   `ID_Compra` int(11) NOT NULL,
   `Fecha_compra` date NOT NULL,
   `Total` double NOT NULL,
-  `Local` varchar(50) NOT NULL,
-  `ID_Cliente` int(11) NOT NULL
+  `Local` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `compra`
 --
 
-INSERT INTO `compra` (`ID_Compra`, `Fecha_compra`, `Total`, `Local`, `ID_Cliente`) VALUES
-(4, '2024-11-08', 32, 'Local 2', 1);
+INSERT INTO `compra` (`ID_Compra`, `Fecha_compra`, `Total`, `Local`) VALUES
+(4, '2024-11-08', 32, 'Local 2');
 
 -- --------------------------------------------------------
 
