@@ -17,7 +17,7 @@ class PedidoModel {
     public static function crearPedido($data) {
         $db = getConnection();
         try {
-            $query = $db->prepare("INSERT INTO compra (Fecha_compra, Total, Local, ID_Cliente) VALUES (CURRENT_DATE, ?, ?)");
+            $query = $db->prepare("INSERT INTO compra (Fecha_compra, Total, Local) VALUES (CURRENT_DATE, ?, ?)");
             $query->execute([$data['precio'], $data['local']]);
         } catch (PDOException $e) {
             die("Error al crear el pedido: " . $e->getMessage());
